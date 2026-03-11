@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .image-section {
+            width: 25%;
+            position: relative;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .chat-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .chat-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .text-section {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        
+        .text-content {
+            text-align: center;
+        }
+        
+        .text-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .text-content p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image Section (25% width) -->
+        <div class="image-section">
+            <img src="https://via.placeholder.com/300x400" alt="Sample Image">
+            <div class="chat-icon" title="Chat with us">💬</div>
+        </div>
+        
+        <!-- Text Section (50% width) -->
+        <div class="text-section">
+            <div class="text-content">
+                <h2>Welcome!</h2>
+                <p>This is a sample layout with an image on the left and centered text on the right. You can customize the content and styling as needed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

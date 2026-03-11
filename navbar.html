@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Courses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #667eea;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Cards Container */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .card-subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .course-details {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .course-details p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">DevAcademy</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header">
+            <h1>Web Development Courses</h1>
+            <p>Master the skills you need to become a professional web developer</p>
+        </div>
+
+        <!-- Course Cards -->
+        <div class="cards-container">
+            <!-- Card 1: HTML & CSS -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🎨</div>
+                    <h2 class="card-title">HTML & CSS</h2>
+                    <p class="card-subtitle">Beginner Level</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Learn the fundamentals of web design with HTML and CSS. Create beautiful and responsive websites from scratch.</p>
+                    <div class="course-details">
+                        <p><strong>Duration:</strong> 4 weeks</p>
+                        <p><strong>Students:</strong> 5,200+</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <button class="btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Card 2: JavaScript Basics -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">⚡</div>
+                    <h2 class="card-title">JavaScript Basics</h2>
+                    <p class="card-subtitle">Intermediate Level</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Master JavaScript fundamentals including variables, functions, loops, and DOM manipulation for interactive websites.</p>
+                    <div class="course-details">
+                        <p><strong>Duration:</strong> 6 weeks</p>
+                        <p><strong>Students:</strong> 8,450+</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <button class="btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Card 3: React.js -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">⚛️</div>
+                    <h2 class="card-title">React.js</h2>
+                    <p class="card-subtitle">Intermediate Level</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Learn React, the most popular JavaScript library for building modern, interactive user interfaces and single-page applications.</p>
+                    <div class="course-details">
+                        <p><strong>Duration:</strong> 8 weeks</p>
+                        <p><strong>Students:</strong> 6,800+</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <button class="btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Card 4: Backend with Node.js -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🚀</div>
+                    <h2 class="card-title">Node.js & Express</h2>
+                    <p class="card-subtitle">Advanced Level</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Build scalable backend applications using Node.js and Express. Learn about databases, APIs, and server-side development.</p>
+                    <div class="course-details">
+                        <p><strong>Duration:</strong> 10 weeks</p>
+                        <p><strong>Students:</strong> 4,200+</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <button class="btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Card 5: Web Design UI/UX -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🎯</div>
+                    <h2 class="card-title">UI/UX Design</h2>
+                    <p class="card-subtitle">Intermediate Level</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Create stunning user interfaces and experiences. Learn design principles, wireframing, prototyping, and user-centered design.</p>
+                    <div class="course-details">
+                        <p><strong>Duration:</strong> 6 weeks</p>
+                        <p><strong>Students:</strong> 7,100+</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
+                    </div>
+                    <button class="btn">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Card 6: Full Stack Development -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🔧</div>
+                    <h2 class="card-title">Full Stack Program</h2>
+                    <p class="card-subtitle">Advanced Level</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Comprehensive program covering frontend, backend, databases, and deployment. Become a complete full-stack developer.</p>
+                    <div class="course-details">
+                        <p><strong>Duration:</strong> 16 weeks</p>
+                        <p><strong>Students:</strong> 3,500+</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <button class="btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevAcademy. All rights reserved. | Learn, Build, Succeed</p>
+    </footer>
+</body>
+</html>

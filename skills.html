@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Ajay Allinagaram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .nav-link:hover {
+            background: #764ba2;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .intro {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .skill-category {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f0f4ff 100%);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #555;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-section {
+            margin-top: 40px;
+            border-top: 3px solid #667eea;
+            padding-top: 30px;
+        }
+
+        .experience-section h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .experience-card {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .experience-details h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-details p {
+            color: #667eea;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .experience-details .description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="nav-link">← Back to Home</a>
+
+        <h1>My Skills</h1>
+        <p class="intro">
+            As a Senior Software Engineer, I have developed expertise across multiple domains and technologies. 
+            Here's a comprehensive overview of my technical skills and competencies.
+        </p>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>🖥️ Frontend Technologies</h3>
+                <div class="skill-item">React.js</div>
+                <div class="skill-item">Vue.js</div>
+                <div class="skill-item">Angular</div>
+                <div class="skill-item">HTML5 / CSS3</div>
+                <div class="skill-item">JavaScript / TypeScript</div>
+                <div class="skill-item">Responsive Design</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>⚙️ Backend Technologies</h3>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Java / Spring Boot</div>
+                <div class="skill-item">Python / Django</div>
+                <div class="skill-item">RESTful APIs</div>
+                <div class="skill-item">Microservices</div>
+                <div class="skill-item">GraphQL</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>🗄️ Database & Data</h3>
+                <div class="skill-item">SQL / PostgreSQL</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Redis</div>
+                <div class="skill-item">Elasticsearch</div>
+                <div class="skill-item">Data Architecture</div>
+                <div class="skill-item">Query Optimization</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>☁️ Cloud & DevOps</h3>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">Kubernetes</div>
+                <div class="skill-item">CI/CD Pipelines</div>
+                <div class="skill-item">Jenkins</div>
+                <div class="skill-item">Infrastructure as Code</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>🧠 Specialized Areas</h3>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Blockchain</div>
+                <div class="skill-item">Web3</div>
+                <div class="skill-item">Solidity</div>
+                <div class="skill-item">System Design</div>
+                <div class="skill-item">Performance Optimization</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>📊 Tools & Methodologies</h3>
+                <div class="skill-item">Git / GitHub</div>
+                <div class="skill-item">Agile / Scrum</div>
+                <div class="skill-item">TDD</div>
+                <div class="skill-item">Software Architecture</div>
+                <div class="skill-item">Design Patterns</div>
+                <div class="skill-item">Team Leadership</div>
+            </div>
+        </div>
+
+        <div class="experience-section">
+            <h2>Professional Experience Highlights</h2>
+
+            <div class="experience-card">
+                <img src="https://i.pravatar.cc/150?img=15" alt="Tech Company">
+                <div class="experience-details">
+                    <h3>Senior Software Engineer</h3>
+                    <p>Current Position • 5+ Years Experience</p>
+                    <p class="description">
+                        Leading technical teams, architecting scalable systems, and implementing best practices in software development. 
+                        Mentoring junior developers and contributing to open-source projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <img src="https://i.pravatar.cc/150?img=25" alt="Previous Company">
+                <div class="experience-details">
+                    <h3>Software Engineer</h3>
+                    <p>Previous Role • 3 Years Experience</p>
+                    <p class="description">
+                        Developed full-stack applications, contributed to system design, and improved application performance. 
+                        Collaborated with cross-functional teams to deliver quality solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <img src="https://i.pravatar.cc/150?img=35" alt="Early Career">
+                <div class="experience-details">
+                    <h3>Junior Developer</h3>
+                    <p>Starting Position • 2 Years Experience</p>
+                    <p class="description">
+                        Built foundational skills in web development, learned industry best practices, 
+                        and contributed to various projects while growing as a developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

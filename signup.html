@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <!-- Signup Form -->
+    <div style="width: 500px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+        <h2>Signup Form</h2>
+        <form>
+            <!-- Name -->
+            <div style="margin-bottom: 15px;">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <!-- Email -->
+            <div style="margin-bottom: 15px;">
+                <label for="signup-email">Email:</label><br>
+                <input type="email" id="signup-email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <!-- Password -->
+            <div style="margin-bottom: 15px;">
+                <label for="signup-password">Password:</label><br>
+                <input type="password" id="signup-password" name="password" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <!-- Confirm Password -->
+            <div style="margin-bottom: 15px;">
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" id="confirm-password" name="confirmPassword" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <!-- Courses Dropdown -->
+            <div style="margin-bottom: 15px;">
+                <label for="courses">Select Course:</label><br>
+                <select id="courses" name="courses" style="width: 100%; padding: 8px; margin-top: 5px;">
+                    <option value="">-- Select a Course --</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+
+            <!-- Gender Radio Buttons -->
+            <div style="margin-bottom: 15px;">
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Signup</button>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div style="width: 500px; margin: 30px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+        <h2>Login Form</h2>
+        <form>
+            <!-- Email -->
+            <div style="margin-bottom: 15px;">
+                <label for="login-email">Email:</label><br>
+                <input type="email" id="login-email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <!-- Password -->
+            <div style="margin-bottom: 15px;">
+                <label for="login-password">Password:</label><br>
+                <input type="password" id="login-password" name="password" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #008CBA; color: white; border: none; border-radius: 4px; cursor: pointer;">Login</button>
+        </form>
+    </div>
+</body>
+</html>
